@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>InteriAR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .imgBoxDiv{
+      position:relative;
+      cursor:pointer;
+      overflow:hidden;
+      width:240px;
+    }
+
+    .imgDiv{
+      width:100%;
+      height:100%;
+      position:absolute;
+      background: white;
+      z-index:1;
+      -webkit-transition:all .5x ease;
+      bottom:0px;
+      overflow: hidden;
+    }
+
+    .imgBoxDiv:hover .imgDiv{
+      bottom:60px;
+    }
+
+    .imgDescDiv{
+      width:100%;
+      height:50px;
+      padding: 10px;
+      color:#FFFFFF;
+      background: #000000;
+      position:absolute;
+      bottom:0px;
+      text-align: center;
+      font-size:12px;
+    }
+
+
+    /*
+    .imgswap img:last-child{display:none}
+    .imgswap:hover img:first-child{display:none}
+    .imgswap:hover img:last-child{display:inline-block}*/
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1100px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+    .div_root{
+      width:100%;
+    }
+    .div_inside{
+      width : 180px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header style="text-align:center; font-size:70px">
+    <img src="image/InteriorIcon.png" width="100px" height="85px"/>
+    INTERIAR
+    <img src="image/ARIcon.png" width="100px" height="85px"/>
+  </header>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <a class="navbar-brand" href="./main.html">Home</a>
+        <li><a href="./Bed.html">Bed</a>
+        <li><a href="./Sofa.html">Sofa</a></li>
+        <li><a href="./Chair.html">Chair</a></li>
+        <li><a href="./Table.html">Table</a></li>
+        <li><a href="#">Carpet</a></li>
+        <li><a href="#">Light</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-center">
+      <table width="100%" style="text-align:left; border:none">
+          <tr>
+            <td colspan="4">
+              <h2>Table</h2>
+            </td>
+          </tr>
+            <tr>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb/f10df5e4f42edf837d96593a.png?1481694380323" height="100%"></div>
+                  <div class="imgDescDiv">POLYGON WORK TABLE<br>1200(샘플)</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/d4d60232e7b0813fd9a67732.png" height="100%"></div>
+                  <div class="imgDescDiv">1-7 bar table<br>-type H</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/53da1eaad89bb7e1160ca987.png?1487908256104" height="100%"></div>
+                  <div class="imgDescDiv">DEER table L</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/2b86d15887bda17cff7ce6e6.png?1487665906973" height="100%"></div>
+                  <div class="imgDescDiv">PIN table S</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/05362a0fd66cdf39a442a820.png?1491472588838" height="100%"></div>
+                  <div class="imgDescDiv">에디트(Edith)</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/2fe8c13e6683857395560d8e.png" height="100%"></div>
+                  <div class="imgDescDiv">나비 테이블</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb/1b6d83768d725f58f6df7ddc.png" height="100%"></div>
+                  <div class="imgDescDiv">Lino Table 05 <br> 180w ( NEW )</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/b8e5ecc1c46c365fa510c12d.png" height="100%"></div>
+                  <div class="imgDescDiv">레노스 (Leanos)</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb/733c6bb2c981df1f29bc451e.png" height="100%"></div>
+                  <div class="imgDescDiv">Lino Table 02 | 160w</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/615a4241d114e2f9541a2546.png" height="100%"></div>
+                  <div class="imgDescDiv">LACK</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/2deb9f5b5fab698729de79f2.png?1488950426096" height="100%"></div>
+                  <div class="imgDescDiv">STRIND</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/8213ff754e58a4cec01b307c.png?1489027093600" height="100%"></div>
+                  <div class="imgDescDiv">LEKSVIK</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb/1c18c9b9fefe12483832c09d.png?1485847836748" height="100%"></div>
+                  <div class="imgDescDiv">LITHOS | Round</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/0f1ba3ff85686dfc62f887e9.png?1488771089455" height="100%"></div>
+                  <div class="imgDescDiv">DALOM</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb_s/6d86ec7fa5c3d777ce4c1069.png?1488444514309" height="100%"></div>
+                  <div class="imgDescDiv">MUDDUS</div>
+                </div>
+              </td>
+              <td>
+                <div style="height:250px"class="imgBoxDiv">
+                  <div class="imgDiv"><img src="https://d5ogl78ccxxow.cloudfront.net/ub/imgs/library_thumb/3232dae560b176f449b36271.png?1488264926480" height="100%"></div>
+                  <div class="imgDescDiv">ALVE</div>
+                </div>
+              </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
