@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>InteriAR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .imgBoxDiv{
+      position:relative;
+      cursor:pointer;
+      overflow:hidden;
+      width:240px;
+    }
+
+    .imgDiv{
+      width:100%;
+      height:100%;
+      position:absolute;
+      background: white;
+      z-index:1;
+      -webkit-transition:all .5x ease;
+      bottom:0px;
+      overflow: hidden;
+    }
+
+    .imgBoxDiv:hover .imgDiv{
+      bottom:60px;
+    }
+
+    .imgDescDiv{
+      width:100%;
+      height:50px;
+      padding: 10px;
+      color:#FFFFFF;
+      background: #000000;
+      position:absolute;
+      bottom:0px;
+      text-align: center;
+      font-size:12px;
+    }
+
+
+    /*
+    .imgswap img:last-child{display:none}
+    .imgswap:hover img:first-child{display:none}
+    .imgswap:hover img:last-child{display:inline-block}*/
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 700px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+    .div_root{
+      width:100%;
+    }
+    .div_inside{
+      width : 180px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header style="text-align:center; font-size:70px; margin-bottom:10px">
+    <img src="image/interioricon2.png" width="100px" height="85px"/>
+    INTERIAR
+  </header>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <a class="navbar-brand" href="./main.html">Home</a>
+        <li><a href="./contact.html">Contact</a>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-center">
+      <table width="100%" style="text-align:left; border:none">
+        <p style="text-align:left; margin-top:30px; font-size:30px"><strong> Contact Consumer </strong></p>
+        <p style="text-align:left; font-size:15px; color:gray"> 당신의 개성이 들어간 디자인 용품이나</p>
+        <p style="text-align:left; font-size:15px; color:gray"> 당신이 직접 꾸민 인테리어를 소개해주세요!</p>
+        <div style="text-align:left; padding-left:100px; margin-top:50px;"><input type="text" value="사진 경로 입력" style="width:500px"><input type='button' value="찾아보기" style="margin-left:20px" /></div>
+        <p> <img src="./image/drag_drop.png" style="margin-top:50px; width:950px; height:400px"/> </p>
+      </table>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center" style="padding-top:30px">
+  <p>Copyright(c)2019 by 인테리5조 with 구지혁, 김동찬, 김한별, 문성주, 이진호, 전하훈. All Page content is property of 전하훈 </p>
+</footer>
+
+</body>
+</html>
